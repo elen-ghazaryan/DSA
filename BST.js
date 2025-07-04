@@ -101,6 +101,7 @@ class BinarySearchTree {
     }
 
     levelorder(node = this.root) {
+        if(!node) return []
         const queue = [node];
         const result = []
         while(queue.length) {
